@@ -2,6 +2,7 @@ const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const CopyPlugin = require('copy-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
+const webpack = require('webpack')
 
 module.exports = {
     entry: {
@@ -26,7 +27,17 @@ module.exports = {
             ]
         }),
         new CleanWebpackPlugin(),
+        new webpack.HotModuleReplacementPlugin(),
     ],
+    mode: 'development',
+    devServer: {
+        historyApiFallback: true,
+        static: path.resolve(__dirname, './dist'),
+        open: true,
+        compress: true,
+        hot: true,
+        port: 8080,
+    },
 
 
 }

@@ -37,6 +37,20 @@ const mockedResponse = [
         price: 200,
         imageUrl:"./images/pear.jpg"
     }
+    ,
+    {
+        id: 7,
+        name: "Арбуз",
+        price: 400,
+        imageUrl:"./images/watermelon.jpg"
+    }
+    ,
+    {
+        id: 8,
+        name: "Виноград",
+        price: 200,
+        imageUrl:"./images/grapes.jpg"
+    }
 ]
 
 export const mockedApi = ()=>

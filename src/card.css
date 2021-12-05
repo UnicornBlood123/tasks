@@ -1,0 +1,24 @@
+.container{
+    display: flex;
+    gap: 30px 60px;
+    flex-flow: row wrap;
+    list-style: none;
+}
+.item{
+    border: solid 2px lightgray;
+    text-align: center;
+    font-size:30px;
+    box-shadow: 3px 1px 1px lightgray;
+    margin-left: 100px;
+}
+.price{
+    color: red;
+    padding-bottom: 10px;
+}
+.name{
+    padding-top: 10px;
+}
+h1{
+    padding-bottom: 30px;
+}
+

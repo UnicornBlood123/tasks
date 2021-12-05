@@ -29,6 +29,14 @@ module.exports = {
         new CleanWebpackPlugin(),
         new webpack.HotModuleReplacementPlugin(),
     ],
+    module: {
+        rules: [
+            {
+                test: /\.css$/,
+                use: ["style-loader", "css-loader"],
+            }
+        ]
+    },
     mode: 'development',
     devServer: {
         historyApiFallback: true,

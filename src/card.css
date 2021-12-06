@@ -5,8 +5,11 @@
     list-style: none;
 }
 .item{
+    border-radius: 20px;
+    background-color: white;
     border: solid 2px lightgray;
     text-align: center;
+    font-style: italic;
     font-size:30px;
     box-shadow: 3px 1px 1px lightgray;
     margin-left: 100px;
@@ -19,6 +22,13 @@
     padding-top: 10px;
 }
 h1{
+    border-radius: 20px;
+    font-style: italic;
+    text-align: center;
+    background-color: lightgray;
     padding-bottom: 30px;
+}
+body{
+    background-color: whitesmoke;
 }
 
